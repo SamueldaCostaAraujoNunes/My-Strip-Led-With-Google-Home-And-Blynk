@@ -19,6 +19,7 @@ Neste momento, já conseguia controlar a fita pela Biblioteca NeoPixel, o que pa
 Com o controlador bem desenvolvido, comecei a pensar em soluções para o controle usando a internet. Depois de diversas tentativas, achei duas plataformas que se completam perfeitamente! A Sinric e a Blynk! A Sinric, é uma biblioteca que viabiliza a comunicação entre projetos IOT, com as Assistentes Virtuais Alexa e Google Assistant. Assim, consigo receber e interpretar todos os gatilhos vindo da Sinric, tornando a fita, mais inteligente. A Blynk, se tornou util dando suporte as funções que a Sinric não suportava, como por exemplo: Efeitos, velocidade dos efeitos, um picker color mais simples...
 
 E por fim, descobri como usar o servidor da Blynk junto ao IFTTT, permitindo a integração com diversos aplicativos e plataformas.  Segue o exemplo:
+
  ![Ifttt-1](src/ifttt-1.jpg)
  ![Ifttt-2](src/ifttt-2.jpg)
 
