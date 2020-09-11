@@ -232,21 +232,18 @@ void loop() {
   }
   now = millis();
   if(now - last_change > TIMER_MS && notificationStatus) {
-    Serial.println("Notificação acabou");
     fita_notification.setColor(0,0,0);
     last_change = now;
     notificationStatus = false;
   }
 }
 BLYNK_WRITE(V0) {//Notification
-  Serial.println("Notificação");
   int r = param[0].asInt();
   int g = param[1].asInt();
   int b = param[2].asInt();
   fita_notification.setColor(g, r, b);
   notificationStatus = true;
   last_change = millis();
-  Serial.println("Notificação iniciada");
 }
 
 BLYNK_WRITE(V1) {//Speed
