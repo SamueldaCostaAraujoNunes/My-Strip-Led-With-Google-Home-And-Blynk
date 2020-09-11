@@ -8,8 +8,8 @@
 #include <WS2812FX.h>
 
 #define BLYNK_PRINT Serial
-#define LED_COUNT 125
-#define LED_PIN D3
+#define LED_COUNT 125 // Quantidade de Leds
+#define LED_PIN D3 // Porta do Nodemcu
 
 #define MyApiKey "" // Api da sinric
 #define MyWifiSSID "" // Nome do Wifi
