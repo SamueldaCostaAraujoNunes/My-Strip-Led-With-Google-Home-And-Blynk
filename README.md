@@ -32,13 +32,23 @@ Com o controlador bem desenvolvido, comecei a pensar em soluções para o contro
 
 ## Projeto:
 
+### Demonstração de Comandos por voz, pelo Google Home!
+
 [![Demonstração de Comandos por voz, pelo Google Home](http://img.youtube.com/vi/nKkAOsW4jrg/0.jpg)](http://www.youtube.com/watch?v=nKkAOsW4jrg "Demonstração de Comandos por voz, pelo Google Home")
+
+### Demonstração do Controle por Voz pelo Google Home, durante efeitos ativos!
 
 [![Demonstração do Controle por Voz pelo Google Home, durante efeitos ativos!](http://img.youtube.com/vi/VTJRLcUQSow/0.jpg)](http://www.youtube.com/watch?v=VTJRLcUQSow "Demonstração do Controle por Voz pelo Google Home, durante efeitos ativos!")
 
+### Demonstração de Notificações!
+
 [![Demonstração de Notificações!](http://img.youtube.com/vi/6ezldXTzgic/0.jpg)](http://www.youtube.com/watch?v=6ezldXTzgic "Demonstração de Notificações!")
 
+### Demonstração de cores pelo aplicativo Blynk!
+
 [![Demonstração de cores pelo aplicativo Blynk.](http://img.youtube.com/vi/k2Rvmtq1Z8E/0.jpg)](http://www.youtube.com/watch?v=k2Rvmtq1Z8E "Demonstração de cores pelo aplicativo Blynk.")
+
+### Demonstração de alguns dos efeitos!
 
 [![Demonstração de alguns dos efeitos!](http://img.youtube.com/vi/0yw_9z11R9I/0.jpg)](http://www.youtube.com/watch?v=0yw_9z11R9I "Demonstração de alguns dos efeitos!")
 
