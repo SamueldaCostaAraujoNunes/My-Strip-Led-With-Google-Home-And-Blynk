@@ -16,6 +16,8 @@ Recentemente, comprei uma fita led! Quando ela chegou, fiquei bastante desaponta
 
 ## Pré-requisitos:
 
+- Uma fita led Ws2812b, ou similar.
+- Um NodeMcu V3.
 - Realizar o cadastro na [Sinric]
 - Realizar o cadastro na [Blynk] e copiar a interface da descrição, respeitando as portas virtuais!
 
@@ -27,12 +29,38 @@ Neste momento, já conseguia controlar a fita pela Biblioteca NeoPixel, o que pa
 
 Com o controlador bem desenvolvido, comecei a pensar em soluções para o controle usando a internet. Depois de diversas tentativas, achei duas plataformas que se completam perfeitamente! A [Sinric] e a [Blynk]! A [Sinric], é uma biblioteca que viabiliza a comunicação entre projetos IOT, com as Assistentes Virtuais Alexa e Google Assistant. Assim, consigo receber e interpretar todos os gatilhos vindo da [Sinric], tornando a fita, mais inteligente. A [Blynk], se tornou util dando suporte as funções que a [Sinric] não suportava, como por exemplo: Efeitos, velocidade dos efeitos, um picker color mais simples...
 
-E por fim, descobri como usar o servidor da [Blynk] junto ao [IFTTT] como um serviço RESTful, permitindo a integração com diversos aplicativos e plataformas.  Segue o exemplo:
+
+## Projeto:
+
+[![Demonstração de Comandos por voz, pelo Google Home](http://img.youtube.com/vi/nKkAOsW4jrg/0.jpg)](http://www.youtube.com/watch?v=nKkAOsW4jrg "Demonstração de Comandos por voz, pelo Google Home")
+
+[![Demonstração do Controle por Voz pelo Google Home, durante efeitos ativos!](http://img.youtube.com/vi/VTJRLcUQSow/0.jpg)](http://www.youtube.com/watch?v=VTJRLcUQSow "Demonstração do Controle por Voz pelo Google Home, durante efeitos ativos!")
+
+[![Demonstração de Notificações!](http://img.youtube.com/vi/6ezldXTzgic/0.jpg)](http://www.youtube.com/watch?v=6ezldXTzgic "Demonstração de Notificações!")
+
+[![Demonstração de cores pelo aplicativo Blynk.](http://img.youtube.com/vi/k2Rvmtq1Z8E/0.jpg)](http://www.youtube.com/watch?v=k2Rvmtq1Z8E "Demonstração de cores pelo aplicativo Blynk.")
+
+[![Demonstração de alguns dos efeitos!](http://img.youtube.com/vi/0yw_9z11R9I/0.jpg)](http://www.youtube.com/watch?v=0yw_9z11R9I "Demonstração de alguns dos efeitos!")
+
+## Exemplos de aplicações:
+
+### Usando Triggers do IFTTT para notificação:
+
+Descobri como usar o servidor da [Blynk] junto ao [IFTTT] como um serviço RESTful, permitindo a integração com diversos aplicativos e plataformas.
+
+É possivel utilizar qualquer gatilho disponibilizado na plataforma. Primeiro, deverá criar uma ação personalizada, clicando em "Create", escolha o gatilho que desejar. E para a ação desejada, escolha o WebHooks. 
+
+Você, deverá utilizar a URL: https://45.55.96.146/your-auth-key/update/porta-para-qual-deseja-enviar-a-cor
+
+Atraves, do metódo PUT, você enviará no Header, o Content-type sendo 'application/json', e no Body, uma lista contendo a cor desejada para o efeito de notificação, seguindo o padrão RGB.
+
+O exemplo abaixo, indica uma notificação para informar quando o celular estiver descarregando.
 
 ![Ifttt-1](src/ifttt-1.jpg)
 ![Ifttt-2](src/ifttt-2.jpg) 
 
-Pegando a cor primária do Windows e jogando na fita:
+
+### Pegando a cor primária do Windows e jogando na fita:
 
 ![teste](src/windows-color.gif)
 
